@@ -71,13 +71,11 @@ a {
 	width:1080px;
 	margin:0 auto;
 }
-#wrapborder
-{ 
-    width:900px; 
-    margin:0 auto; 
-    background-color: #e68b8b;
-    border:double;
-    padding:20px;
+#wrapborder { 
+  margin: 0 auto; 
+  background-color: #e68b8b;
+  border: double;
+  padding: 20px;
 }
 
 #nav2 ul {
@@ -137,6 +135,10 @@ a {
 	box-shadow: 0 8px 20px 0 rgba(0,0,0,.15);
 }
 
+.flex-child p{
+  margin-left: 15px;
+}
+
 .flex-child ul {
 	list-style: none;
 }
@@ -145,33 +147,20 @@ a {
     margin-right: 40%;
 } 
 
-.person-container {
-    display: inline-block;
-    width: 45%;
-    margin: 10px;
-    text-align: center;
-    height: 220px; /* Set a fixed height for the container */
-    overflow: hidden; /* Hide any overflow */
+.img-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
 }
 
-.person-container img {
-    width: 100%; /* Make the image fill the container horizontally */
-    height: 100%; /* Make the image fill the container vertically */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
+.left-img, .right-img {
+  width: 100%; /* Make each div take up full width by default */
 }
 
-.person-container p {
-  margin-top: 10px; /* Add some space between the image and text */
+@media (min-width: 768px) {
+  .left-img, .right-img {
+      width: 50%; /* Make each div take up 50% of the width on larger screens */
+  }
 }
-
- #other {
-  background-color: #07c73f;
-  width: 128px;
-  height: 128px;
-  border-radius: 50%;
-  box-shadow: inset 0 0 0 4px #07c73f, inset 0 0 0 22px #fff;
-  margin: 0 auto;
- }
 
 .star {
   position: relative;
