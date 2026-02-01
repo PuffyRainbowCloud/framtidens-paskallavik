@@ -199,7 +199,6 @@ a {
 	border-bottom: .7em solid #FFF;
 	border-left: .3em solid transparent;
 
-	/* Controlls the size of the stars. */
 	font-size: 30px;
 
 	&:before,
@@ -228,30 +227,23 @@ a {
 
 @media screen and (max-width: 1000px) {
 	body {
-		font-size: 20px;
-		/* Slightly larger for mobile readability */
-		padding: 15px;
-		height: auto;
-		/* Let content determine height */
+		font-size: 18px;
+		padding: 20px;
+		height: 100vh;
 		background-attachment: scroll;
-		background-size: cover;
-		min-height: 100vh;
 	}
 
 	h1 {
-		font-size: 40px;
-		/* Scale down the title */
-	}
-
-	h2 {
-		margin-left: 15px;
-		font-size: 26px;
+		font-size: 42px;
 	}
 
 	#brödtext {
-		width: 100%;
+		width: auto;
 		padding: 0;
-		box-sizing: border-box;
+	}
+
+	#wrapborder {
+		padding: 10px;
 	}
 
 	.flex-container {
@@ -261,21 +253,35 @@ a {
 	}
 
 	.flex-child {
-		margin: 10px;
-		padding: 15px;
-		border-radius: 10px;
+		margin: 0 0 20px 0;
+		padding: 15px 20px;
 	}
 
-	.flex-child p,
-	.flex-child h3 {
-		margin-left: 10px;
-		margin-right: 10px;
-		line-height: 1.5;
+	.flex-child ul li {
+		margin-bottom: 12px;
+		font-size: 20px;
+		line-height: 1.4;
 	}
 
-	/* Improve link tap targets */
-	.flex-child a {
-		display: inline-block;
-		padding: 8px 0;
+	h3 {
+		font-size: 26px;
+	}
+
+	.img-container {
+		flex-direction: column;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.left-img,
+	.right-img {
+		width: 100%;
+	}
+
+	.star {
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 }
